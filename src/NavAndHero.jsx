@@ -145,7 +145,7 @@ const NavAndHero = () => {
         
         <div className="md:w-[45%] flex justify-end mt-8 md:mt-0">
           <img 
-            src="/hero-phone.png" 
+            src="/hero-phone.webp" 
             alt="Falcon App Dashboard" 
             className="w-full max-w-[400px] h-auto object-contain mix-blend-multiply"
           />

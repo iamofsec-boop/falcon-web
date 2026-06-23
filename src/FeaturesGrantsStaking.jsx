@@ -7,11 +7,11 @@ const FeaturesGrantsStaking = () => {
         <h2 className="text-3xl md:text-[2.75rem] font-bold text-[#111111] tracking-tight mb-20">
           Your most secure wallet to store & grow your assets
         </h2>
-        
+
         <h3 className="text-3xl md:text-[2.5rem] font-bold text-[#111111] mb-16">
           Core Features
         </h3>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 text-left">
           <div className="space-y-4">
             <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center">
@@ -46,9 +46,9 @@ const FeaturesGrantsStaking = () => {
                 <line x1="8" y1="12" x2="16" y2="12"></line>
               </svg>
             </div>
-            <h4 className="text-xl font-bold text-[#111111]">Staking Rewards</h4>
+            <h4 className="text-xl font-bold text-[#111111]">FLC Pooling</h4>
             <p className="text-gray-500 font-medium text-[15px] leading-relaxed">
-              Earn competitive APR by staking your assets on the platform
+              Pool your FLC to compound your holdings and earn yield over time
             </p>
           </div>
 
@@ -99,7 +99,7 @@ const FeaturesGrantsStaking = () => {
         <div className="md:w-[45%] space-y-8">
           <h2 className="text-3xl md:text-[2.5rem] font-bold text-[#111111]">Falcon Weekly Grants</h2>
           <p className="text-lg text-[#111111] font-medium">Falcon distributes grants weekly through the Falcon app.</p>
-          
+
           <div className="space-y-8 pt-4">
             <div>
               <h4 className="text-lg font-bold text-[#111111]">Download the Falcon App</h4>
@@ -119,62 +119,61 @@ const FeaturesGrantsStaking = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="md:w-[45%] flex justify-center mt-8 md:mt-0 p-4">
-          <img 
-            src="/grants-phone.png" 
-            alt="Falcon Grants Interface" 
+          <img
+            src="/grants-phone.webp"
+            alt="Falcon Grants Interface"
             className="w-full max-w-[320px] h-auto object-contain drop-shadow-2xl"
           />
         </div>
       </section>
 
+      {/* Maximize Yield Through Pooling */}
       <section className="py-24 px-6 md:px-12 max-w-[1440px] mx-auto text-center">
-        <h2 className="text-3xl md:text-[2.75rem] font-bold text-[#111111] mb-4">Earn Through Staking</h2>
-        <p className="text-xl text-gray-800 font-medium mb-16">
-          Stake your assets and earn competitive APR while supporting the Falcon ecosystem
+        <h2 className="text-3xl md:text-[2.75rem] font-bold text-[#111111] mb-4">
+          Maximize Yield Through Pooling
+        </h2>
+        <p className="text-lg text-gray-500 font-medium max-w-2xl mx-auto mb-16 leading-relaxed">
+          Access the ecosystem, complete KYC to claim FLC grants, and finish tasks for additional FLC rewards.
+          Hold digital assets in the Vault to earn a bonus or pool FLC to compound your holdings.
         </p>
-        
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-20 max-w-5xl mx-auto">
-          <div className="border border-gray-200 p-10 rounded-[2rem] shadow-sm">
-            <div className="w-16 h-16 mx-auto bg-gray-50 rounded-2xl flex items-center justify-center mb-6">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="8" x2="12" y2="16"></line>
-                <line x1="8" y1="12" x2="16" y2="12"></line>
-              </svg>
-            </div>
-            <h4 className="text-xl font-bold text-[#111111] mb-3">Flexible & Locked Staking</h4>
-            <p className="text-gray-500 font-medium text-[15px]">Choose periods that match your strategy</p>
-          </div>
-          
-          <div className="border border-gray-200 p-10 rounded-[2rem] shadow-sm">
-            <div className="w-16 h-16 mx-auto bg-gray-50 rounded-2xl flex items-center justify-center mb-6">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-              </svg>
-            </div>
-            <h4 className="text-xl font-bold text-[#111111] mb-3">Competitive APR</h4>
-            <p className="text-gray-500 font-medium text-[15px]">Earn attractive returns on assets</p>
-          </div>
-          
-          <div className="border border-gray-200 p-10 rounded-[2rem] shadow-sm">
-            <div className="w-16 h-16 mx-auto bg-gray-50 rounded-2xl flex items-center justify-center mb-6">
-              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-              </svg>
-            </div>
-            <h4 className="text-xl font-bold text-[#111111] mb-3">Transparent Rewards</h4>
-            <p className="text-gray-500 font-medium text-[15px]">Track earnings in real-time</p>
-          </div>
-        </div>
 
-        <div className="flex justify-center p-4">
-          <img 
-            src="/staking-phone.png" 
-            alt="Falcon Staking Interface" 
-            className="w-full max-w-[320px] h-auto object-contain drop-shadow-2xl"
-          />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div className="bg-gray-50 rounded-[2rem] p-10 text-center space-y-6">
+            <div className="w-16 h-16 mx-auto bg-gray-200 rounded-full flex items-center justify-center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <circle cx="12" cy="12" r="4"></circle>
+                <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                <line x1="14.83" y1="9.17" x2="19.07" y2="4.93"></line>
+                <line x1="4.93" y1="19.07" x2="9.17" y2="14.83"></line>
+              </svg>
+            </div>
+            <h4 className="text-2xl font-bold text-[#111111]">Vault Holding Bonus</h4>
+            <p className="text-gray-500 font-medium text-[15px] leading-relaxed">
+              Transfer and hold base assets (such as USDT, ETH, etc.) in any amount in the Falcon Vault.
+              Maintain these holdings and receive a dedicated FLC bonus payment all while retaining total
+              flexibility of all assets. (i.e you can withdraw your assets at any time.)
+            </p>
+          </div>
+
+          <div className="bg-gray-50 rounded-[2rem] p-10 text-center space-y-6">
+            <div className="w-16 h-16 mx-auto bg-gray-200 rounded-full flex items-center justify-center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <path d="M16 10a4 4 0 0 1-8 0"></path>
+              </svg>
+            </div>
+            <h4 className="text-2xl font-bold text-[#111111]">Pool FLC for Yield</h4>
+            <p className="text-gray-500 font-medium text-[15px] leading-relaxed">
+              Simple and direct. Pool your FLC to mint FLC. These includes FLC from Grants, Rewards
+              and also from Assets bonuses. Earnings can be tracked and managed directly
+              in your dashboard.
+            </p>
+          </div>
         </div>
       </section>
     </>
@@ -182,5 +181,4 @@ const FeaturesGrantsStaking = () => {
 };
 
 export default FeaturesGrantsStaking;
-
 

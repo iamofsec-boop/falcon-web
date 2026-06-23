@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import react from '@vitejs/plugin-react-swc'
 import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
@@ -11,6 +11,11 @@ export default defineConfig({
     host: true,
     port: 5173,
     allowedHosts: true
+  },
+  build: {
+    target: 'esnext',
+    minify: 'esbuild',
+    sourcemap: false,
+    cssMinify: true
   }
 })
-

